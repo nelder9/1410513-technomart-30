@@ -10,6 +10,12 @@
   --basic-gold-special: #FFD180;
   --basic-white-special: #F3F7F9;
   --basic-white-extra: #F1F5F7;
+  --basic-grey-dark: #405069;
+  --basic-orange: #FFBF47;
+  --basic-blue: #3BBCE3;
+  --basic-pink: #DC91D8;
+  --basic-green: #8ED78F;
+  --basic-gold: #FFC047;
   --special: #663d15;
 }
 
@@ -23,7 +29,6 @@ body {
   font-size: 14px;
   line-height: 24px;
   font-weight: 700;
-  background-image: url("../img/bg.jpg");
   background-position: top center;
   background-repeat: no-repeat;
 }
@@ -37,6 +42,12 @@ img {
   height: auto;
 }
 
+.popular-products-list, .popular-manufacturers-list, .popular-products-list, .footer-menu, .footer-offers {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
 /* Header */
 
 .main-header-menu {
@@ -45,6 +56,11 @@ img {
 
 .main-header-logo {
   background-color: var(--basic-red-special);
+}
+
+.logo {
+  background-color: var(--basic-red-special);
+  box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
 }
 
 .main-header-menu a {
@@ -78,7 +94,7 @@ font-size: 18px;
 }
 
 .user-navigation a {
-  color: var();
+  color: var(--basic-black);
 }
 
 .user-navigation a:hover {
@@ -113,32 +129,29 @@ font-size: 18px;
 }
 
 .orange {
-  background-color: #FFBF47;
+  background-color: var(--basic-orange);
 }
 
 .blue {
-  background-color: #3BBCE3;
+  background-color: var(--basic-blue);
 }
 
 .pink {
-  background-color: #DC91D8;
+  background-color: var(--basic-pink);
 }
 
 .green {
-  background-color: #8ED78F;
+  background-color: var(--basic-green);
 }
 
 .gold {
-  background-color: #FFC047;
+  background-color: var(--basic-gold);
 }
-
-
 
 .offers-item h3 {
   font-size: 30px;
   line-height: 42px;
 }
-
 
 .offers-button {
   background-color:rgba(255, 255, 255, 0.3);
@@ -147,7 +160,7 @@ font-size: 18px;
 }
 
 .offers-bg-img {
-  background-color: var(--basic-extra-light);
+  background-color: rgba(0, 0, 0, 0.25);
   background-image: url(../img/perforators.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -167,10 +180,6 @@ font-size: 18px;
 }
 
 /* Popular products */
-
-.popular-products-list {
-  list-style-type: none;
-}
 
 .popular-title {
   font-size: 30px;
@@ -199,15 +208,7 @@ font-size: 18px;
   line-height: 18px;
 }
 
-.popular-manufacturers-list {
-  list-style-type: none;
-}
-
 /* Services */
-
-.services-list {
- list-style-type: none;
-}
 
 .services-title {
   font-size: 30px;
@@ -215,7 +216,7 @@ font-size: 18px;
 }
 
 .services-text {
-  font-family: PT Sans;
+  font-family: PT Sans, Arial, sans-serif;
   font-weight: normal;
   font-size: 13px;
 }
@@ -224,7 +225,6 @@ font-size: 18px;
   background-color: var(--basic-white);
   font-size: 21px;
   line-height: 30px;
-  background-color: var(--basic-white);
   box-shadow: 0px 1px 0px var(--basic-white);
 }
 
@@ -236,7 +236,7 @@ font-size: 18px;
   font-size: 21px;
   line-height: 30px;
   background-color: var(--basic-blue-special);
-  box-shadow: 0px 1px 0px #293449, inset 0px 1px 0px #405069;
+  box-shadow: 0px 1px 0px var(--basic-blue-dark), inset 0px 1px 0px var(--basic-grey-dark);
 }
 
 .services-item a {
@@ -245,7 +245,7 @@ font-size: 18px;
 
 .services-item:hover {
   background-color: var(--basic-blue-dark);
-  box-shadow: 0px 1px 0px #293449, inset 0px 1px 0px #405069;
+  box-shadow: 0px 1px 0px var(--basic-blue-dark), inset 0px 1px 0px var(--basic-grey-dark);
 }
 
 /* About */
@@ -274,20 +274,12 @@ font-size: 18px;
   color: var(--basic-white-special);
 }
 
-.footer-menu {
-  list-style-type: none;
-}
-
 .footer-menu a {
   color: var(--basic-white-extra);
 }
 
 .footer-menu a:hover {
   text-decoration-line: underline;
-}
-
-.footer-offers {
-  list-style-type: none;
 }
 
 .footer-offers a {
