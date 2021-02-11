@@ -182,6 +182,7 @@ font-size: 18px;
 .products-name {
   font-size: 18px;
   line-height: 20px;
+  color: var(--basic-black);
 }
 
 .old-price {
