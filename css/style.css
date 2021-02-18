@@ -55,7 +55,10 @@ img {
 .footer-offers,
 .site-navigation,
 .offers-list,
-.services-list {
+.services-list,
+.breadcrumbs,
+.catalog-products-list,
+.pagination {
   padding: 0;
   margin: 0;
   list-style-type: none;
@@ -151,6 +154,121 @@ img {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 20px;
+}
+
+/* Breadcrumbs */
+
+.breadcrumbs {
+font-family: "PT Sans", Arial, sans-serif;
+font-style: normal;
+font-weight: normal;
+font-size: 13px;
+line-height: 18px;
+text-transform: uppercase;
+color: var(--basic-black);
+}
+
+.breadcrumbs > li > a {
+  text-decoration: none;
+  color: var(--basic-black);
+  }
+
+/* Breadcrumbs */
+
+.pagination {
+font-family: "PT Sans", Arial, sans-serif;
+font-style: normal;
+font-weight: normal;
+font-size: 13px;
+line-height: 18px;
+color: var(--basic-black);
+text-transform: uppercase;
+}
+
+.pagination > li > a {
+text-decoration: none;
+color: var(--basic-black);
+}
+
+
+/* Catalog */
+
+.catalog-title {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: var(--basic-blue-special);
+}
+
+.filter-title {
+font-family: "PT Sans", Arial, sans-serif;
+font-style: normal;
+font-weight: normal;
+font-size: 13px;
+line-height: 18px;
+color: var(--basic-blue-special);
+}
+
+.filter-titles {
+font-family: "PT Sans", Arial, sans-serif;
+font-style: normal;
+font-size: 17px;
+line-height: 30px;
+text-transform: uppercase;
+color: var(--basic-blue-special);
+}
+
+.button-submit {
+font-family: "PT Sans", Arial, sans-serif;
+font-style: normal;
+font-weight: normal;
+font-size: 13px;
+line-height: 18px;
+color: var(--basic-black);
+text-transform: uppercase;
+border: 1px solid #E5E5E5;
+box-sizing: border-box;
+width: 220px;
+height: 38px;
+}
+
+.sort-type-active {
+font-family: "PT Sans", Arial, sans-serif;
+font-style: normal;
+font-weight: normal;
+font-size: 13px;
+line-height: 18px;
+color: var(--basic-red-special);
+}
+
+.sort-type {
+font-family: "PT Sans", Arial, sans-serif;
+font-style: normal;
+font-weight: normal;
+font-size: 13px;
+line-height: 18px;
+color: var(--basic-black);
+opacity: 0.3;
+border-bottom: 1px dashed var(--basic-red-special);
+}
+
+.catalog-text-title {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: var(--basic-black);
+}
+
+.catalog-text {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  color: var(--basic-black);
 }
 
 /* User navigation */
@@ -260,15 +378,27 @@ img {
   color: var(--basic-white);
 }
 
+/* Catalog products */
+
+.catalog-products-list {
+  display: grid;
+  grid-template-columns: 220px 220px 220px;
+  gap: 20px;
+}
+
+.catalog-products-list > li {
+  border: 1px solid var(--basic-white-ultra);
+}
+
 /* Popular products */
 
 .popular-products-list {
   display: grid;
   grid-template-columns: 220px 220px 220px 220px;
-  column-gap: 20px;
+  gap: 20px;
 }
 
-.popular-products-list li {
+.popular-products-list > li {
   border: 1px solid var(--basic-white-ultra);
 }
 
